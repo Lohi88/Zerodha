@@ -15,15 +15,24 @@ function RightSection({
                     <p>{productDescription}</p>
 
                     <div className='mt-3'>
-                    <a href={learnMore} style={{marginLeft:"120px",textDecoration:"none"}}>Learn More <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <a 
+                            href={learnMore} 
+                            style={{ marginLeft: "120px", textDecoration: "none" }}
+                        >
+                            Learn More <i className="fa-solid fa-arrow-right-long"></i>
+                        </a>
                     </div>
                 </div>
-                <div className="col-6 ">
-                    <img src={imagURL}/>
+
+                <div className="col-6">
+                    <img 
+                        src={imagURL} 
+                        alt={productName || "product image"} 
+                    />
                 </div>
             </div>
         </div>
-     );
+    );
 }
 
 export default RightSection;
